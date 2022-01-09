@@ -59,14 +59,8 @@ is.vector(X)
 >> TRUE
 is.numeric(X)
 >> TRUE
-
 is.vector(Y)
 >> TRUE
-is.charace
-
-(Y)
->> TRUE
-
 is.vector(z)
 >> TRUE
 is.numeric(X)
@@ -132,7 +126,7 @@ rbind(1:3, 3:1)
 [2,]    3    2    1
 
 m <- matrix(1:6, byrow=TRUE, nrow=2)
-m <- rbinf(m,7:9)
+m <- rbind(m,7:9)
 print(m)
 >>
 [,1] [,2] [,3]
@@ -150,8 +144,8 @@ one      1    2    3
 two      4    5    6
 three    7    8    9
 
-	colnames(m) <- c("Cone", "Ctwo", "Cthree")
-	print(m)
+colnames(m) <- c("Cone", "Ctwo", "Cthree")
+print(m)
 >>
 Cone Ctwo Cthree
 one      1    2      3
